@@ -5,7 +5,7 @@ dotenv.config({});
 const {Translate} = require('@google-cloud/translate').v2;
 // Creates a client
 const translate = new Translate({
-    key:process.env.APIKEY
+    key:process.env.APIKEY1
 });
 async function detectLanguage() {//provides only identification
   let [detections] = await translate.detect("Hola soy Arslan, vivo en California");
